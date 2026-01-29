@@ -1,0 +1,21 @@
+name: Landing Page CI
+
+on:
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: HTML structure check
+        run: |
+          test -f index.html
+          echo "index.html exists"
+      - name: CSS file check
+        run: |
+          test -f style.css
+          echo "style.css exists"
+      - name: CI success
+        run: echo "Build successful"
