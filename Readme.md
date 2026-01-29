@@ -11,3 +11,6 @@ Dự án này sử dụng phương pháp phát triển theo module, chia nhỏ t
   - **features.html**: Giới thiệu tính năng hoặc dịch vụ.
   - **pricing.html**: Bảng giá sản phẩm.
   - **contact.html**: Thông tin liên hệ và form đăng ký.
+## Release v1.0 - Official Launch
+- Đã hoàn thành Landing Page.
+- Đã kiểm tra hệ thống.
