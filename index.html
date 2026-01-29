@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Landing Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hero"></div>
+<div id="features"></div>
+<div id="pricing"></div>
+<div id="contact"></div>
+<script>
+function loadSection(id, file) {
+fetch(file)
+.then(res => res.text())
+.then(html => {
+document.getElementById(id).innerHTML = html;
+});
+}
+loadSection("hero", "sections/hero.html");
+loadSection("features", "sections/features.html");
+loadSection("pricing", "sections/pricing.html");
+loadSection("contact", "sections/contact.html");
+</script>
+</body>
+</html>
